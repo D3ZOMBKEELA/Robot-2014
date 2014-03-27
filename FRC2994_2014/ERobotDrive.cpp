@@ -42,7 +42,7 @@ void ERobotDrive::InitRobotDrive() {
 	m_maxOutput = 1.0;
 	m_safetyHelper = new MotorSafetyHelper(this);
 	m_safetyHelper->SetSafetyEnabled(true);
-	m_turbo = false;
+	m_turbo = true;
 }
 
 ERobotDrive::ERobotDrive(SpeedController &frontLeftMotor, SpeedController &rearLeftMotor, SpeedController &centerLeftMotor,

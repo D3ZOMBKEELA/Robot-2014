@@ -368,7 +368,7 @@ public:
 		}
 		else if(kEventClosed == leftStick.GetEvent(BUTTON_TURBO))
 		{
-			robotDrive.SetTurbo(false);
+			robotDrive.SetTurbo(true); // usually false
 		}
 
 		robotDrive.ArcadeDrive(rightStick.GetY(), -rightStick.GetX());
