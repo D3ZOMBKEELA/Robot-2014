@@ -151,7 +151,7 @@ public:
 		{
 			rightWinch.Set(WINCH_FWD);
 			leftWinch.Set(-WINCH_FWD);
-			for (int i = 0; i < 37; i++)
+			for (int i = 0; i < 75; i++)
 			{
 				if (IsOperatorControl())
 				{
@@ -275,7 +275,7 @@ public:
 		Wait(1.0); // Ken
 		
 		// STEP 4: Launch the catapult
-		LaunchCatapult();
+//		LaunchCatapult();
 		Wait (1.0); // Ken
 		
 		// Get us fully into the zone for 5 points

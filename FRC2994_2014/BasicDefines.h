@@ -23,7 +23,7 @@
 #define CENTER_LEFT_DRIVE_PWM 7  // UNKNOWN CABLE
 #define CENTER_RIGHT_DRIVE_PWM 8 // UNKNOWN CABLE
 #define INTAKE_MOTOR_PWM 5       // cable 34 / 21
-#define RIGHT_WINCH_MOTOR_PWM 6        // cable 40 / 27
+#define RIGHT_WINCH_MOTOR_PWM 6  // cable 40 / 27
 #define LEFT_WINCH_MOTOR_PWM 9
 
 // Solenoids
@@ -74,11 +74,11 @@
 // # of encoder ticks to drive for in auto
 // TODO: Determine empirically.
 #define INTO_ZONE_DIST 2385
-#define SHOT_POSN_DIST 1431
+#define SHOT_POSN_DIST 916 // 1431
 // Backwards drive for drivers
 #define ENCODER_BACK_DIST 5500
 // Time to wait after running motor to launch shooter before turning motor off
-#define CATAPULT_SHOOT_WAIT 0.1
+#define CATAPULT_SHOOT_WAIT 0.75
 // Wait before turning off the eject pistons to ensure the ball is out.
 #define EJECT_WAIT 2.0
 // Speed to drive at in autonomous
