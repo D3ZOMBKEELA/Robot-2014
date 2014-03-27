@@ -362,14 +362,14 @@ public:
 			shifters.Set(DoubleSolenoid::kReverse);
 		}
 		
-		if(kEventOpened == leftStick.GetEvent(BUTTON_TURBO))
-		{
-			robotDrive.SetTurbo(true);
-		}
-		else if(kEventClosed == leftStick.GetEvent(BUTTON_TURBO))
-		{
-			robotDrive.SetTurbo(true); // usually false
-		}
+//		if(kEventOpened == leftStick.GetEvent(BUTTON_TURBO))
+//		{
+//			robotDrive.SetTurbo(true);
+//		}
+//		else if(kEventClosed == leftStick.GetEvent(BUTTON_TURBO))
+//		{
+//			robotDrive.SetTurbo(true); // usually false
+//		}
 
 		robotDrive.ArcadeDrive(rightStick.GetY(), -rightStick.GetX());
 	}

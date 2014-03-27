@@ -84,7 +84,7 @@ protected:
 	SpeedController *m_rearRightMotor;
 	MotorSafetyHelper *m_safetyHelper;
 	
-	bool m_turbo;
+//	bool m_turbo;
 	
 private:
 	int32_t GetNumMotors()
