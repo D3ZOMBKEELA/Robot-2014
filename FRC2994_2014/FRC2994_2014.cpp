@@ -150,8 +150,8 @@ public:
 		if (loaded)
 		{
 			rightWinch.Set(WINCH_FWD);
-			leftWinch.Set(-WINCH_FWD);
-			for (int i = 0; i < 37; i++)
+			leftWinch.Set(WINCH_RVS);
+			for (int i = 0; i < 75; i++)
 			{
 				if (IsOperatorControl())
 				{
@@ -266,6 +266,7 @@ public:
 		intake.Set(0.0);
 		rightWinch.Set(0.0);
 		leftWinch.Set(0.0);
+		shifters.Set(DoubleSolenoid::kForward);
 		
 		// STEP 2: Move forward to optimum shooting position
 		Drive(-AUTO_DRIVE_SPEED, SHOT_POSN_DIST);
@@ -460,6 +461,7 @@ public:
 		intake.Set(0.0);
 		rightWinch.Set(0.0);
 		leftWinch.Set(0.0);
+		shifters.Set(DoubleSolenoid::kForward);
 
 		arm.Set(DoubleSolenoid::kReverse);
 
@@ -497,7 +499,7 @@ public:
 			{
 				bigSanity++;
 				sanity = 0;
-				dsLCD->PrintfLine(DriverStationLCD::kUser_Line4, "%d", bigSanity);
+				dsLCD->PrintfLine(DriverStationLCD::kUser_Line4, "%d", winchSwitch.Get());
 			}
 			gamepad.Update();
 			leftStick.Update();
